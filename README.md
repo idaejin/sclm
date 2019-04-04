@@ -1,4 +1,4 @@
-## Installation of  `HRQoL` using `devtools`
+## Installation of  `sclm` using `devtools`
 
 `R` version >3.2.3 required
 
