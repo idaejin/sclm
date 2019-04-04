@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1550507215032.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "167687784",
+    "id" : "D792C7E1",
+    "lastKnownWriteTime" : 1549054882,
+    "last_content_update" : 1549054882,
+    "path" : "C:/Users/Diego/Desktop/sclm/sclm/R/isomap2.R",
+    "project_path" : "R/isomap2.R",
+    "properties" : {
+        "cursorPosition" : "50,0",
+        "scrollLine" : "38",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,13 @@
+Package: sclm
+Type: Package
+Title: Spatial and Spatio-temporal Smooth Composite Link Models 
+Version: 1.0.0
+Author: Diego Ayma, Dae-Jin Lee, María Durban
+Maintainer: Diego Ayma <dayma@est-econ.uc3m.es>
+Description: Modeling the latent trend within spatial or 
+             spatio-temporal aggregated data using the 
+             smooth composite link model (SCLM) approach.
+Imports: Matrix, MASS, classInt, RColorBrewer, sp, spam, rgeos
+License: GPL (>=2)
+Encoding: UTF-8
+LazyData: true
