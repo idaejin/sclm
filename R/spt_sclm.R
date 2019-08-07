@@ -169,8 +169,8 @@ spt_sclm <- function(y, x1, x2, x3, efine = NULL, Cs, Ct, ndx = c(10, 10, 10), b
 
       # New variance components and convergence check
       lanew <- c(tau1, tau2, tau3)
-      dla <- mean(abs(la - lanew))
-      #dla <- mean(abs((la - lanew)/lanew))
+      #dla <- mean(abs(la - lanew))
+      dla <- mean(abs((la - lanew)/lanew))
       la <- lanew
 
       if (trace) {
