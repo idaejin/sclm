@@ -149,28 +149,28 @@ spt_sclm <- function(y, x1, x2, x3, efine = NULL, Cs, Ct, ndx = c(10, 10, 10), b
       # Tau 1
       G1inv.d <- (1/la[1])*G1inv.n
       ed1 <- sum(dZtNZ*(G1inv.d*G^2))
-      ed1 <- ifelse(ed1 == 0, 1e-6,ed1)
+      ed1 <- ifelse(ed1 <= 1e-16, 1e-6,ed1)
       tau1 <- sum(b.random^2*G1inv.n)/ed1
-      tau1 <- ifelse(tau1 == 0, 1e-6,tau1)
+      tau1 <- ifelse(tau1 <= 1e-16, 1e-6,tau1)
 
       # Tau 2
       G2inv.d <- (1/la[2])*G2inv.n
       ed2 <- sum(dZtNZ*(G2inv.d*G^2))
-      ed2 <- ifelse(ed2 == 0, 1e-6,ed2)
+      ed2 <- ifelse(ed2 <= 1e-16, 1e-6,ed2)
       tau2 <- sum(b.random^2*G2inv.n)/ed2
-      tau2 <- ifelse(tau2 == 0, 1e-6, tau2)
+      tau2 <- ifelse(tau2 <= 1e-16, 1e-6, tau2)
 
       # Tau 3
       G3inv.d <- (1/la[3])*G3inv.n
       ed3 <- sum(dZtNZ*(G3inv.d*G^2))
-      ed3 <- ifelse(ed3 == 0, 1e-6,ed3)
+      ed3 <- ifelse(ed3 <= 1e-16, 1e-6,ed3)
       tau3 <- sum(b.random^2*G3inv.n)/ed3
-      tau3 <- ifelse(tau3 == 0, 1e-6, tau3)
+      tau3 <- ifelse(tau3 <= 1e-16, 1e-6, tau3)
 
       # New variance components and convergence check
       lanew <- c(tau1, tau2, tau3)
-      #dla <- mean(abs(la - lanew))
-      dla <- mean(abs((la - lanew)/lanew))
+      dla <- mean(abs(la - lanew))
+      #dla <- mean(abs((la - lanew)/lanew))
       la <- lanew
 
       if (trace) {
